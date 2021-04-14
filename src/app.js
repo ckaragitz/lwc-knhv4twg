@@ -21,13 +21,13 @@ export default class App extends LightningElement {
             const numb2 = parseInt(this.num2, 10);
             var tempResult = 0;
             if (operation === 'Add') {
-                tempResult = `${numb1 + numb2}`;
+                tempResult = numb1 + numb2;
             } else if (operation === 'Subtract') {
-                tempResult = `${numb1 - numb2}`;
+                tempResult = numb1 - numb2;
             } else if (operation === 'Multiply') {
-                tempResult = `${numb1 * numb2}`;
+                tempResult = numb1 * numb2;
             } else if (operation === 'Divide') {
-                tempResult = `${numb1 / numb2}`;
+                tempResult = numb1 / numb2;
             }
             if (tempResult !== null && tempResult !== '' && tempResult !== undefined && !isNaN(tempResult)) {
                 this.result = tempResult;
